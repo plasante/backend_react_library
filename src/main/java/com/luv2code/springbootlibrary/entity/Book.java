@@ -7,6 +7,12 @@ import javax.persistence.*;
 @Data
 public class Book {
 
+    /*
+        La cle primaire 'id' sera generee automatiquement lors de l'insertion
+        d'une nouvelle entite dans la BD en utilisant la strategie
+        d'auto-incrementation.
+     */
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
